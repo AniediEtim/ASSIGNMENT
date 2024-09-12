@@ -1,0 +1,230 @@
+/* Basic Reset - Removes default margins and paddings set by the browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures that padding and borders are included in the element’s width and height */
+}
+
+/* General body styling - Sets the font, line spacing, and background color for the whole webpage */
+body {
+    font-family: Arial, sans-serif; /* Makes the text use the Arial font, with a backup of sans-serif */
+    line-height: 1.6; /* Adds space between lines for better readability */
+    background-color: #f4f4f4; /* Light gray background color */
+}
+
+/* Header Styling - Styles the area at the top of the page (header) */
+header {
+    color: white; /* Makes the text white */
+    padding: 20px 0; /* Adds padding above and below the header content */
+    text-align: center; /* Centers all the content inside the header */
+    background-image: url(./images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Styling for the logo inside the header */
+.logo {
+    width: 80px; /* Sets the width of the logo */
+    height: auto; /* Ensures the logo keeps its proportions */
+    display: block; /* Treats the logo like a block element (forces it to take up space) */
+    margin: 0 auto 10px; /* Centers the logo horizontally and adds space below it */
+}
+
+/* Navigation Bar Styling - Styles the horizontal bar that holds links to other sections of the website */
+nav {
+    background-color: skyblue; 
+    padding: 10px; /* Adds space around the navigation items */
+}
+
+/* Navigation Menu Styling - Targets the list of navigation links */
+.nav-menu {
+    display: flex; /* Displays the links in a row (side by side) */
+    justify-content: center; /* Centers the links horizontally */
+    list-style: none; /* Removes the bullet points from the list */
+}
+
+/* Each item in the navigation bar */
+.nav-menu li {
+    margin: 0 15px; /* Adds space to the left and right of each navigation item */
+}
+
+/* Styles the navigation links */
+.nav-menu a {
+    color: white; /* Makes the text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 18px; /* Increases the size of the text for readability */
+}
+
+/* Hamburger Menu Icon - Hidden by default on larger screens */
+.menu-icon {
+    display: none; /* Hides the menu icon by default */
+    cursor: pointer; /* Changes the cursor to a pointer (indicating it’s clickable) */
+    font-size: 24px; /* Makes the icon large */
+    color: white; /* Makes the icon white */
+    text-align: center; /* Centers the icon */
+}
+
+/* Main Content Area Styling - The main section of the page that holds content like text and images */
+.container {
+    display: flex; /* Arranges the main content and sidebar in a row */
+    flex-wrap: wrap; /* Ensures that items wrap to the next line if they don't fit */
+    padding: 20px; /* Adds space around the container */
+    max-width: 1200px; /* Restricts the container width to 1200px, even on large screens */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Main Section Styling */
+main {
+    flex: 3; /* This takes up more space than the sidebar (about 75%) */
+    padding: 20px; /* Adds padding around the content */
+    background-color: #fff; /* Sets the background color to white */
+    margin-bottom: 20px; /* Adds space below the main content */
+    box-shadow: 0 2px 5px rgba(134, 121, 227, 0.1); /* Adds a shadow around the content for depth */
+}
+
+/* Styles for headings inside the main section */
+main h2 {
+    color: #2c3e50; /* Sets the text color to dark blue */
+    margin-bottom: 10px; /* Adds space below the headings */
+}
+
+/* Styles for paragraphs in the main section */
+main p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+/* Responsive Images - Makes sure images adjust their size to fit the screen */
+.responsive-img {
+    width: 100%; /* Makes the image stretch to the full width of its container */
+    height: auto; /* Maintains the image's original proportions */
+    margin-bottom: 20px; /* Adds space below images */
+}
+
+/* Blog Post Styling - Styles individual blog posts */
+.blog-post {
+    margin-bottom: 20px; /* Adds space between blog posts */
+}
+
+/* Styling for links within the blog posts */
+.blog-post a {
+    color: #2980b9; /* Light blue color for the links */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* Changes the link style when hovered over */
+.blog-post a:hover {
+    text-decoration: underline; /* Adds underline on hover to show the link is clickable */
+}
+
+/* Sidebar Styling - Styles the smaller section next to the main content */
+aside {
+    flex: 1; /* Sidebar takes up less space (about 25%) */
+    padding: 20px; /* Adds space around the content */
+    background-color: #ecf0f1; /* Light gray background for the sidebar */
+    margin-bottom: 20px; /* Adds space below the sidebar */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    margin-bottom: 20px; /* Adds space below the search bar */
+}
+
+/* Styling the search input field */
+.search-bar input {
+    width: 70%; /* Makes the input field take up 70% of the sidebar's width */
+    padding: 10px; /* Adds space inside the input field */
+    border: 1px solid #ccc; /* Light gray border around the input field */
+    border-radius: 4px; /* Rounds the corners of the input field */
+}
+
+/* Styling the search button */
+.search-bar button {
+    padding: 10px 15px; /* Adds padding inside the button */
+    background-color: #2980b9; /* Light blue background for the button */
+    color: white; /* White text for the button */
+    border: none; /* Removes the border around the button */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered over */
+}
+
+/* Changes the button color when hovered */
+.search-bar button:hover {
+    background-color: #3498db; /* Makes the button a lighter blue when hovered */
+}
+
+/* Sidebar Titles */
+aside h3 {
+    margin-bottom: 10px; /* Adds space below sidebar headings */
+}
+
+/* Sidebar List Styling */
+aside ul {
+    list-style: none; /* Removes bullets from the list */
+    padding-left: 0; /* Removes left padding */
+}
+
+aside ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+/* Sidebar links */
+aside ul li a {
+    color: #2c3e50; /* Dark blue color for the links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+aside ul li a:hover {
+    text-decoration: underline; /* Underlines links when hovered */
+}
+
+/* Footer Styling - Styles the bottom section of the page */
+footer {
+    background-color: #b1d8f7; /*blue background for the footer */
+    color: white; /* Makes the text white */
+    text-align: center; /* Centers the text */
+    padding: 20px 0; /* Adds space above and below the footer */
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Footer links */
+footer a {
+    color: #3498db; /* Light blue for the footer links */
+    text-decoration: none; /* Removes underline from footer links */
+    
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underlines footer links on hover */
+}
+
+/* Media Queries - Makes the design responsive for smaller screens */
+@media (max-width: 768px) {
+    /* Stacks the main content and sidebar on top of each other for smaller screens */
+    .container {
+        flex-direction: column; /* Changes the layout from row to column */
+    }
+
+    /* Shows the hamburger menu icon on smaller screens */
+    .menu-icon {
+        display: block; /* Makes the menu icon visible */
+    }
+
+    /* Hides the navigation links on small screens */
+    .nav-menu {
+        display: none; /* Hides the navigation menu */
+        flex-direction: column; /* Makes the menu items stack vertically when shown */
+        background-color: #7e93a9; /* Dark background for the menu */
+        padding: 10px;
+    }
+
+    /* Makes the navigation menu appear when the menu icon is clicked (JavaScript required to toggle this) */
+    .nav-menu.active {
+        display: flex; /* Shows the menu */
+    }
+
+    /* Changes spacing of navigation items for mobile */
+    .nav-menu li {
+        margin: 10px 0; /* Adds vertical space between menu items */
+    }
+}
